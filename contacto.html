@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="shortut icon" href="/images/3Recurso 2.png">
+    <!-- Link CSS -->
+    <link rel="stylesheet"  href="/CSS/styles.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;900&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Barra de navegacion -->
+    <nav> 
+        <a class="logo" href="index.html">
+            <img src="/images/3Recurso 2.png" alt="Logo NTI">
+        </a>    
+        <ul >
+            <li >
+                <a href="/Servicios.html">Servicios</a>
+            </li>
+            <li >
+                <a  href="/Catalogo.html">Catálogo</a>
+            </li>
+            <li >
+                <a href="/Contacto.html">Contacto</a>
+            </li>
+            <li > 
+                <a href="/Preguntas Frecuentes.html">Preguntas Frecuentes</a>
+            </li>
+        </ul>
+        
+    </nav>
+    <!-- Formulario de contacto -->
+    <div class="encabezado">
+        <h1 class="subtitle">Contacto</h1> 
+    </div> 
+    <section>
+
+        <form action="mailto:cesar.rivera06@gmail.com" id="contacto" >
+            <fieldset class="infoPers">
+                <legend><h2>Informacion personal</h2> </legend>	
+                    <label for="name">
+                        Nombre
+                    </label> 
+                    <input type="text" id="name" placeholder="César Rivera" >
+                    <br>
+                    <label for="email">
+                        Email
+                    </label>
+                    <input type="email" id="email" placeholder="contacto@nti-designs.com">
+                    <br>
+                    <label for="">Sexo</label>
+                    <select name="genero" id="">
+                        <option value="Mujer">Mujer</option>
+                        <option value="Hombre">Hombre</option>
+                        <option value="Sin dato">Prefiero no decirlo</option>
+                    </select>
+            </fieldset>	
+            <fieldset class="infoPers">	
+                <legend><h2>Productos de tu interés (Puedes seleccionar mas de uno)</h2></legend>
+                <label for="Playeras">Playeras</label>
+                <input type="checkbox" id="playeras" value="playeras">
+                <br>	
+                <label for="Gorras">Gorras</label>
+                <input type="checkbox" id="Gorras" value="Gorras">
+                <br>
+                <label for="Sudaderas">Sudaderas</label>
+                <input type="checkbox" id="Sudaderas" value="Sudaderas">
+                <br>
+                <label for="Termos">Termos</label>
+                <input type="checkbox" id="Termos" value="Termos">
+                <br>
+                <label for="Otro">Otro</label>
+                <input type="checkbox" id="otro" value="otro">
+                <label for="name">Nombre</label>
+                <input type="text" id="Otro producto" placeholder="Especifica" >
+            </fieldset>	
+            
+            <fieldset class="infoPers">
+            <label class="infoPers" for="mensaje"> <h2>Mensaje</h2></label>
+            <br>	
+            <textarea name="" id="mensaje" cols="30" rows="10"></textarea>
+            <br>	
+            <label for="">He leido el aviso de privacidad</label>
+            <input type="radio" id="local" name="priv" value="local">
+            <br>
+            <input type="reset" value="Cancelar">
+            <input type="submit" Value="Enviar">
+            </fieldset>
+        </form>
+        <fieldset class="infoPers">
+        <p>  
+            Horario de atención: <br> 
+            Lunes a viernes: 9:30 am a 6:30 pm <br> 
+            Sábado 10:00 AM a 2:00 PM
+        </p>
+        <h2>Ubicacion</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.338791784462!2d-99.09531290000002!3d19.397762499999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fc2f31d59a15%3A0x5615f613f2bbb733!2sCanela%20484%2C%20Granjas%20M%C3%A9xico%2C%20Iztacalco%2C%2008400%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses-419!2smx!4v1653979105416!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </fieldset>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <div>
+            <p>Siguenos en nuestras redes sociales</p>
+            <section>
+                <p class="textFooter">Facebook</p>
+                <a href="https://www.facebook.com/Nty-Designs-mx-109862841752516/"><img class="iconFooter" src="/images/facebook.png" alt="Facebook"></a> 
+                <p class="textFooter"> Instagram</p>
+                <a href="https://www.instagram.com/ntydesignsmx/"><img class="iconFooter" src="/images/instagram.png" alt="Instagram"></a> 
+            </section>
+        </div>
+        <div>
+            <h3>
+                Copyright 2022 © NTY Designs Todos los derechos reservados.
+            </h3>
+        </div>
+    </footer>
+</body>
+</html>

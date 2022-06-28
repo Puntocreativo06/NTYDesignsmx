@@ -1,0 +1,394 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat;
+    box-sizing: border-box;
+	overflow-x: hidden;
+}
+
+
+/* Barra de Navegacion */
+nav{
+    background-color: #00334e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+}
+
+nav ul li {
+    list-style:none;
+    text-align: center;
+    padding: 5%;
+    font-size: 1.40em
+}
+
+nav ul li a{
+    color: #f6f5f5;
+    text-decoration: none;
+}
+
+nav a img {
+    width: 100px;
+    box-sizing: border-box;
+}
+
+@media only screen and (min-width: 780px){
+    nav{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-right: 3%;
+    }
+    nav ul li {
+        padding: 0;
+        margin-right: 20px;
+    }
+
+
+    nav ul li :hover{
+        color: #ee6f57;
+    }
+
+    nav .logo {
+        margin-left: 5%;
+    }
+}
+
+/* Encabezado Index*/
+
+header{
+    display: flex;
+    background-color: #00334e;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.header-text{
+    color: #f6f5f5;
+    font-size: 1.5em;
+}
+
+header div h1 {
+    font-size: x-large;
+    font-size: 2.5em;
+}
+
+h1,h2{
+    font-family: Pacifico;
+    font-weight: lighter;
+    color: #ee6f57;
+}
+.descripcion{
+    margin: 2% 4%;
+    
+}
+
+header div button{
+    width: 40%;
+    border: none;
+    color: #145374;
+    padding: 2%;
+    text-align: center;
+    text-decoration: none;
+    align-items: center;
+    font-size: 16px;
+    margin: 5%;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 1.5em;
+}
+
+.portada{
+    display: flex;
+    margin: 5% 5%;
+    width: 100%
+}
+
+.img-encabezado{
+    width:100%
+}
+
+@media only screen and (min-width: 780px){
+
+    header{
+        flex-direction: row;
+    }
+
+    header div button:hover{
+        background-color: #ee6f57;
+        color: #f6f5f5;
+        
+    
+    }
+
+    header div h1 {
+        font-size: 3.5em;
+        
+    }
+    .header-text {
+        font-size: x-large;
+    }
+
+}
+/* Secciones index*/
+.subtitulo{
+    font-size: 3em;
+}
+.sec1 h2{
+    background-color: #145374;
+    padding: 3%; 
+    text-align:center;
+}
+.productos{
+    display: grid; 
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(15rem,1fr));  /* Linea para responsive */
+    grid-auto-rows: max-content;
+    background-color: #145374;
+    padding: 3%; 
+}
+.sec1 figure button{
+    width: 40%;
+    border: none;
+    color: #145374;
+    padding: 2%;
+    text-align: center;
+    text-decoration: none;
+    align-items: center;
+    margin: 5%;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 1.2em;
+}
+
+.masVendidos{
+    display: grid; 
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(15rem,1fr));  /* Linea para responsive */
+    grid-auto-rows: max-content;
+    background-color: #f6f5f5;
+    padding: 3%; 
+}
+.sec1 figcaption{
+    color: #f6f5f5;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.sec2 figcaption{
+    color: #145374;
+    text-align: center;
+    font-size: 1.5em;
+}
+.itemProducto{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.imgEjem{
+    border-top-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+    width: 230px;
+}
+
+
+.sec2 h2{
+    background-color: #f6f5f5;
+    padding: 3%; 
+    text-align:center;
+}
+
+/* Secciones Servicios*/
+.encabezado{
+    font-size: 1.40em ;
+    background-color: #145374;
+    padding: 3%;
+    text-align: center;
+}
+#servicios img{
+    width:300px;
+}
+
+.container {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "descripcionSub imgSubli"
+      "imgDtf descripcionDtf"
+      "descripcionVinil imgVinil"; 
+    margin: 2%;
+  }
+  .descripcionSub { 
+    grid-area: descripcionSub;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    padding-right: 5%;
+    font-size: 1.5em;
+    padding: 6%;
+    text-align: right;
+ }
+  .imgSubli { grid-area: imgSubli; }
+  .imgDtf { 
+    grid-area: imgDtf;
+    display: flex;
+ }
+    .ingDtfItem{
+        align-items: flex-start;
+        text-align: right;
+    }
+
+  .imgVinil { grid-area: imgVinil; }
+  .descripcionDtf { 
+    grid-area: descripcionDtf;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 5%;
+    font-size: 1.5em;
+    padding: 6%;
+ }
+  .descripcionVinil { 
+    grid-area: descripcionVinil;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    padding-right: 5%;
+    font-size: 1.5em;
+    padding: 6%;
+    text-align: right;
+ }
+
+        /* Responsive Servicios */
+        @media only screen and (max-width: 430px){
+            .container {
+            grid-template-columns: 1fr; 
+            grid-template-rows: repeat(6,minmax(150px, auto)); 
+            grid-template-areas: 
+            "descripcionSub" 
+            "imgSubli"
+            "descripcionDtf"        
+            "imgDtf" 
+            "descripcionVinil" 
+            "imgVinil"; 
+        }
+
+        .descripcionSub,.descripcionVinil ,.descripcionDtf{
+        text-align: center;
+        align-items: center;
+        }
+    }
+
+
+
+/* Secciones Catalogo */
+table{
+    margin: 5% auto;
+    border-style:dashed;
+    width: 50%; 
+    border: 5px;
+    border-color: #ee6f57;
+    box-sizing: content-box;
+
+}
+
+table tr {
+    text-align: center;
+    color: #145374;
+    
+
+}
+table tr td p{
+    text-align: center;
+    color: #145374;
+
+}
+/* Secciones Contacto */
+.infoPers {
+    display: inline;
+    margin: 3% 10%;
+    width: 80%;
+    text-align: center;
+    border: none;
+}
+/* Secciones FAQ */
+
+#faq .section-2{
+    background-color: #145374;
+    padding: 2%;
+} 
+
+#faq .section-1,#faq .section-3{
+    background-color: #f6f5f5 ;
+    padding: 2%;
+} 
+
+.section-p-FAQ1{
+    color: #145374 ;
+}
+.section-p-FAQ2{
+    color: #f6f5f5;
+}
+.section-p-FAQ3{
+    color: #145374;
+}
+/* Footer */
+
+footer{
+    background-color:#00334e;
+    text-align: center;
+    padding: 5%;
+    color: #f6f5f5;
+    font-size: 1.2em;
+}
+
+footer div section{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+
+@media only screen and (min-width: 780px){
+    footer div section{
+        flex-direction:row;
+        justify-content: center;
+    }
+    footer{
+        padding: 1%;
+    }
+}
+
+
+.iconFooter{
+    width: 40px;
+
+}
+
+.textFooter{
+    padding: 2% 2%;
+    text-align: center;
+    color: #f6f5f5;
+}
+
+div h3{
+    font-weight: lighter;
+    color: #f6f5f5;
+    font-size: small;
+    padding-top: 1%;
+}

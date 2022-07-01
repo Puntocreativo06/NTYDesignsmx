@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas frecuentes</title>
     <link rel="shortut icon" href="/images/3Recurso 2.png">
+
+    <!--Bootstrap CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    
     <!-- Link CSS -->
     <link rel="stylesheet"  href="/CSS/styles.css">
 
@@ -22,25 +29,32 @@
 </head>
 <body>
     <!-- Barra de navegacion -->
-    <nav> 
-        <a class="logo" href="index.html">
-            <img src="/images/3Recurso 2.png" alt="Logo NTI">
-        </a>    
-        <ul >
-            <li >
-                <a href="/Servicios.html">Servicios</a>
-            </li>
-            <li >
-                <a  href="/Catalogo.html">Catálogo</a>
-            </li>
-            <li >
-                <a href="/Contacto.html">Contacto</a>
-            </li>
-            <li > 
-                <a href="/Preguntas Frecuentes.html">Preguntas Frecuentes</a>
-            </li>
-        </ul>
-        
+    <nav class="navbar navbar-expand-md sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="/images/3Recurso 2.png" alt="Logo NTY">
+          </a>
+          <button id="buttonHam" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="../servicios.html">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../catalogo.html">Catálogo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../preguntas frecuentes.html">Preguntas Frecuentes</a>
+                </li>
+
+            </ul>
+          </div>
+        </div>
     </nav>
     <main id="faq">
         <div class="encabezado">
@@ -64,21 +78,34 @@
             <p class="section-p-FAQ3"> Si en el caso de que usted tenga la licencia de dichas marcas, en caso de que no, no podríamos ayudarlo debido a que NTI está en contra de la piratería..</p>
         </section>
     </main>
-    <footer>
-        <div>
-            <p>Siguenos en nuestras redes sociales</p>
-            <section>
-                <p class="textFooter">Facebook</p>
-                <a href="https://www.facebook.com/Nty-Designs-mx-109862841752516/"><img class="iconFooter" src="/images/facebook.png" alt="Facebook"></a> 
-                <p class="textFooter"> Instagram</p>
-                <a href="https://www.instagram.com/ntydesignsmx/"><img class="iconFooter" src="/images/instagram.png" alt="Instagram"></a> 
-            </section>
-        </div>
-        <div>
-            <h3>
-                Copyright 2022 © NTY Designs Todos los derechos reservados.
-            </h3>
-        </div>
-    </footer>
+    <!-- Footer -->
+    <div id="footer" class="container-fluid">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-4">
+          <div class="col-md-4 d-flex align-items-center">
+            <a href="/index.html" class="mb-3 me-2 mb-md-0 text-decoration-none lh-1">
+              <img src="../images/3Recurso 2.png" width="35px" alt="Logo NTY">
+            </a>
+            <span class="mb-3 mb-md-0">&copy; 2022 NTY Desings Mx</span>
+          </div>
+      
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3">
+                    <a href="#">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </li>
+                <li class="ms-3">
+                    <a href="https://www.facebook.com/Nty-Designs-mx-109862841752516/">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </li>
+                <li class="ms-3">
+                    <a href="https://www.instagram.com/ntydesignsmx/">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </div>
 </body>
 </html>

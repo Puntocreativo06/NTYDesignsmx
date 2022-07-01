@@ -5,9 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Servicios</title>
-    <link rel="shortut icon" href="/images/3Recurso 2.png">
+    <link rel="shortut icon" href="../images/3Recurso 2.png">
+
+    <!--Bootstrap CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    
     <!-- Link CSS -->
-    <link rel="stylesheet"  href="/CSS/styles.css">
+    <link rel="stylesheet"  href="../CSS/styles.css">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,79 +29,111 @@
 </head>
 <body>
     <!-- Barra de navegacion -->
-    <nav> 
-        <a class="logo" href="index.html">
-            <img src="/images/3Recurso 2.png" alt="Logo NTI">
-        </a>    
-        <ul >
-            <li >
-                <a href="/Servicios.html">Servicios</a>
-            </li>
-            <li >
-                <a  href="/Catalogo.html">Catálogo</a>
-            </li>
-            <li >
-                <a href="/Contacto.html">Contacto</a>
-            </li>
-            <li > 
-                <a href="/Preguntas Frecuentes.html">Preguntas Frecuentes</a>
-            </li>
-        </ul>
-        
+    <nav class="navbar navbar-expand-md sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="/images/3Recurso 2.png" alt="Logo NTY">
+          </a>
+          <button id="buttonHam" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="../servicios.html">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../catalogo.html">Catálogo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../preguntas frecuentes.html">Preguntas Frecuentes</a>
+                </li>
+
+            </ul>
+          </div>
+        </div>
     </nav>
     <!-- Productos -->
+
+
     <main id="servicios">
             <div class="encabezado">
                 <h1 class="subtitle animate__animated animate__slideInLeft"">Nuestros servicios</h1> 
             </div> 
             
-            <div class="container">
-                <div class="descripcionSub">
-                    <h2> Sublimación</h2>
-                    <p>La sublimación es la técnica de estampado con la que podemos reproducir cualquier tipo de diseño sin limitaciones de colores sobre prendas blancas de poliéster, tazas de ceramica y cristal, termos de aluminio, entre otros.  Desde fotografías hasta diseños propios a full color, ¡Todo lo podemos plasmar!.</p>
+            <div class="container col-xxl-8 px-4 py-5">
+                <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                  <div class="col-10 col-sm-8 col-lg-6">
+                    <img src="/images/sublimacion que es.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+                  </div>
+                  <div class="col-lg-6">
+                    <h1 class="display-5 fw-bold lh-1 mb-3">Sublimación</h1>
+                    <p class="lead">La sublimación es la técnica de estampado con la que podemos reproducir cualquier tipo de diseño sin limitaciones de colores sobre prendas blancas de poliéster, tazas de ceramica y cristal, termos de aluminio, entre otros.  Desde fotografías hasta diseños propios a full color, ¡Todo lo podemos plasmar!.</p>
+                  </div>
                 </div>
-                <div class="imgSubli"> 
-                    <img src="/images/sublimacion que es.jpg" alt="Que es Sublimacion?">
+            </div>
+
+            <div class="container col-xxl-8 px-4 py-5">
+                <div class="row flex-lg-row align-items-center g-5 py-5">
+                  <div class="col-10 col-sm-8 col-lg-6">
+                    <img src="/images/que es DTF.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+                  </div>
+                  <div class="col-lg-6">
+                    <h1 class="display-5 fw-bold lh-1 mb-3">DTF</h1>
+                    <p class="lead">DTF viene de la siglas "Direct Transfer Film ", o sea, impresión directa sobre film, de esa forma creamos un Transfer Digital que luego de impreso y posteriormente curado, es posible aplicar sobre camisetas de algodón, poliéster y mezcla de cualquier color, ya que incorpora como gran diferencial, la tinta blanca!!. Es la tecnologia más avanzada en personalización de prendas.</p>
+                  </div>
                 </div>
-                <div class="imgDtf">
-                    <img class="imgDtfItem" src="/images/que es DTF.png" alt="Que es Sublimacion?">
+            </div>
+
+            <div class="container col-xxl-8 px-4 py-5">
+                <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                  <div class="col-10 col-sm-8 col-lg-6">
+                    <img src="/images/vinilo-textil-de-corte-1024x667.jpeg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+                  </div>
+                  <div class="col-lg-6">
+                    <h1 class="display-5 fw-bold lh-1 mb-3">Vinil Textil y Autoadhesivo</h1>
+                    <p class="lead">El vinil textil es una lámina plástica termoadhesiva de colores lisos, o con diseños especiales, que se utiliza para estampar prendas de algodón, poliéster, etc. El vinil autoadhesivo es una lamina plastica que suele utilizarse sobre superficies lisas (plastico, metal, vidrio) y que de igual manera permite la posibilidad de plasmar cualquier diseño que tengas en mente.</p>
+                  </div>
                 </div>
-                
-                <div class="descripcionDtf">
-                    <h2>
-                        DTF
-                    </h2>
-                    <p>
-                        DTF viene de la siglas "Direct Transfer Film ", o sea, impresión directa sobre film, de esa forma creamos un Transfer Digital que luego de impreso y posteriormente curado, es posible aplicar sobre camisetas de algodón, poliéster y mezcla de cualquier color, ya que incorpora como gran diferencial, la tinta blanca!!. Es la tecnologia más avanzada en personalización de prendas.
-                    </p>
-                </div>
-                <div class="descripcionVinil">
-                    <h2> Vinil Textil y Autoadhesivo</h2>
-                    <p>El vinil textil es una lámina plástica termoadhesiva de colores lisos, o con diseños especiales, que se utiliza para estampar prendas de algodón, poliéster, etc. El vinil autoadhesivo es una lamina plastica que suele utilizarse sobre superficies lisas (plastico, metal, vidrio) y que de igual manera permite la posibilidad de plasmar cualquier diseño que tengas en mente. </p>
-                </div>
-                <div class="imgVinil">
-                    <img src="/images/vinilo-textil-de-corte-1024x667.jpeg" alt="Que es Sublimacion?">
-                </div>
-            </div> 
+            </div>
+
+
+
         
     </main>
-    <!-- Footer -->
-    <footer>
-        <div>
-            <p>Siguenos en nuestras redes sociales</p>
-            <section>
-                <p class="textFooter">Facebook</p>
-                <a href="https://www.facebook.com/Nty-Designs-mx-109862841752516/"><img class="iconFooter" src="/images/facebook.png" alt="Facebook"></a> 
-                <p class="textFooter"> Instagram</p>
-                <a href="https://www.instagram.com/ntydesignsmx/"><img class="iconFooter" src="/images/instagram.png" alt="Instagram"></a> 
-            </section>
-        </div>
-        <div>
-            <h3>
-                Copyright 2022 © NTY Designs Todos los derechos reservados.
-            </h3>
-        </div>
+
+<!-- Footer -->
+<div id="footer" class="container-fluid">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-4">
+      <div class="col-md-4 d-flex align-items-center">
+        <a href="../index.html" class="mb-3 me-2 mb-md-0 text-decoration-none lh-1">
+          <img src="../images/3Recurso 2.png" width="35px" alt="Logo NTY">
+        </a>
+        <span class="mb-3 mb-md-0">&copy; 2022 NTY Desings Mx</span>
+      </div>
+  
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3">
+                <a href="#">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+            </li>
+            <li class="ms-3">
+                <a href="https://www.facebook.com/Nty-Designs-mx-109862841752516/">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </li>
+            <li class="ms-3">
+                <a href="https://www.instagram.com/ntydesignsmx/">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </li>
+        </ul>
     </footer>
+</div>
     
 
 </body>

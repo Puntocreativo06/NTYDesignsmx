@@ -220,27 +220,15 @@ table tr {
     text-align: center;
     border: none;
 }
+
+
 /* Secciones FAQ */
 
-#faq .section-2{
-    background-color: #145374;
-    padding: 2%;
-} 
+.faqColor{
+    color:#ee6f57;
+    font-size: 1.2rem;
+}
 
-#faq .section-1,#faq .section-3{
-    background-color: #f6f5f5 ;
-    padding: 2%;
-} 
-
-.section-p-FAQ1{
-    color: #145374 ;
-}
-.section-p-FAQ2{
-    color: #f6f5f5;
-}
-.section-p-FAQ3{
-    color: #145374;
-}
 /* Footer */
 
  #footer{

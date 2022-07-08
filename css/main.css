@@ -25,8 +25,9 @@ header {
   text-align: center;
   justify-content: center; }
   header div h1 {
-    font-family: "Montserrat", sans-serif;
-    font-size: 2.5em; }
+    font-family: "Pacifico", sans-serif;
+    font-size: 2.5rem;
+    color: #ee6f57; }
   header div button {
     width: 40%;
     border: none;
@@ -44,3 +45,87 @@ header {
   header div p {
     font-size: 1.4rem;
     color: #F6f5f5; }
+
+@media only screen and (min-width: 780px) {
+  header {
+    flex-direction: row; }
+    header div p {
+      font-size: 1.4rem; }
+    header div button:hover {
+      background-color: #ee6f57;
+      color: #F6f5f5; }
+    header div h1 {
+      font-size: 3.5rem; } }
+
+main .sec1 h2 {
+  background-color: #145374;
+  padding: 3%;
+  text-align: center;
+  color: #ee6f57;
+  font-family: "Pacifico", sans-serif; }
+
+main .sec1 section {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  /* Linea para responsive */
+  grid-auto-rows: max-content;
+  background-color: #145374;
+  padding: 3%; }
+  main .sec1 section figure {
+    display: flex;
+    align-items: center;
+    flex-direction: column; }
+    main .sec1 section figure img {
+      border-top-left-radius: 25%;
+      border-bottom-right-radius: 25%;
+      width: 230px; }
+    main .sec1 section figure figcaption {
+      color: #F6f5f5;
+      text-align: center;
+      font-size: 1.4rem; }
+    main .sec1 section figure button {
+      width: 40%;
+      border: none;
+      color: #145374;
+      padding: 2%;
+      text-align: center;
+      text-decoration: none;
+      align-items: center;
+      margin: 5%;
+      cursor: pointer;
+      border-radius: 8px;
+      font-size: 1.2rem; }
+    main .sec1 section figure button:hover {
+      background-color: #ee6f57;
+      color: #F6f5f5;
+      transition-duration: 0.6s; }
+
+main .sec2 h2 {
+  background-color: #F6f5f5;
+  padding: 3%;
+  text-align: center;
+  color: #ee6f57;
+  font-family: "Pacifico", sans-serif;
+  font-size: 2.5rem; }
+
+main .sec2 section {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  /* Linea para responsive */
+  grid-auto-rows: max-content;
+  background-color: #F6f5f5;
+  padding: 3%; }
+  main .sec2 section figure {
+    display: flex;
+    align-items: center;
+    flex-direction: column; }
+    main .sec2 section figure img {
+      border-top-left-radius: 25%;
+      border-bottom-right-radius: 25%;
+      width: 230px; }
+    main .sec2 section figure figcaption {
+      color: #145374;
+      text-align: center;
+      font-size: 1.4rem; }

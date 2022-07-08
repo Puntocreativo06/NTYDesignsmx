@@ -35,8 +35,9 @@ header{
 
     div{
         h1{
-            font-family:$mainFont;
-            font-size:$textXXL;
+            font-family:$secondaryFont;
+            font-size:$textXxl;
+            color:$keyColor;
         }
         button{
             
@@ -57,13 +58,128 @@ header{
         }
     }
 
-
-
     div{
         p{
             font-size:$textXl;
             color:$blanco;
 
+        }
+    }
+}
+
+
+@media only screen and (min-width: 780px){
+
+    header{
+        flex-direction: row;
+        div{
+            p{
+                font-size:$textXl;
+            }
+            button:hover{
+                background-color:$keyColor;
+                color:$blanco;
+            }
+
+            h1{
+               font-size:$textXxxl; 
+            }
+        }
+    }
+
+}
+
+main{
+    .sec1{
+        h2{
+            background-color:$secondColor;
+            padding: 3%; 
+            text-align:center;
+            color:$keyColor;
+            font-family: $secondaryFont;
+        }
+        section{
+            display: grid; 
+            gap: 1rem;
+            grid-template-columns: repeat(auto-fit, minmax(15rem,1fr));  /* Linea para responsive */
+            grid-auto-rows: max-content;
+            background-color: $secondColor;
+            padding: 3%; 
+
+            figure{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                
+                img{
+                    border-top-left-radius: 25%;
+                    border-bottom-right-radius: 25%;
+                    width: 230px;                
+                }
+                figcaption{
+                    color: $blanco;
+                    text-align: center;
+                    font-size: $textXl;
+                }
+                button{
+                    width: 40%;
+                    border: none;
+                    color:$secondColor;
+                    padding: 2%;
+                    text-align: center;
+                    text-decoration: none;
+                    align-items: center;
+                    margin: 5%;
+                    cursor: pointer;
+                    border-radius: 8px;
+                    font-size: $textLg;
+                }
+                button:hover{
+                    background-color: $keyColor;
+                    color: $blanco;
+                    transition-duration: 0.6s;
+                }
+            }
+        }
+    }
+}
+
+main{
+    .sec2{
+        h2{
+            background-color: $blanco;
+            padding: 3%; 
+            text-align:center;
+            color:$keyColor;
+            font-family: $secondaryFont;
+            font-size:$textXxl ;
+
+        }
+
+        section{
+            display: grid; 
+            gap: 1rem;
+            grid-template-columns: repeat(auto-fit, minmax(15rem,1fr));  /* Linea para responsive */
+            grid-auto-rows: max-content;
+            background-color: $blanco;
+            padding: 3%; 
+
+            figure{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                
+                img{
+                    border-top-left-radius: 25%;
+                    border-bottom-right-radius: 25%;
+                    width: 230px;                
+                }
+                figcaption{
+                    color: $secondColor;
+                    text-align: center;
+                    font-size: $textXl;
+                }
+            }
         }
     }
 }

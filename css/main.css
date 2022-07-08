@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+body {
+  font-family: "Montserrat", sans-serif; }
+
+.navbar {
+  background-color: #00334E; }
+  .navbar div button {
+    background-color: #F6f5f5;
+    color: #ee6f57; }
+  .navbar img {
+    width: 85px;
+    box-sizing: border-box; }
+  .navbar li a {
+    color: #F6f5f5;
+    font-size: 1.2rem; }
+  .navbar li a:hover {
+    color: #ee6f57; }
+
+header {
+  display: flex;
+  background-color: #00334E;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center; }
+  header div h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.5em; }
+  header div button {
+    width: 40%;
+    border: none;
+    color: #145374;
+    padding: 2%;
+    text-align: center;
+    text-decoration: none;
+    align-items: center;
+    font-size: 16px;
+    margin: 5%;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 1.4rem; }
+  header div p {
+    font-size: 1.4rem;
+    color: #F6f5f5; }

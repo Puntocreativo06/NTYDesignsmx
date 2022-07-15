@@ -2,36 +2,12 @@ body{
     font-family: $mainFont;
 }
 
-.navbar{
-    background-color: $mainColor;
-    div{
-        button{
-            background-color: $blanco;
-            color: $keyColor;
-        }
-    }
-    img{
-        width: 85px;
-        box-sizing: border-box;
-    }
-    li{
-        a{
-            color:$blanco;
-            font-size:$textLg;
-        }
-        a:hover{
-            color:$keyColor;
-        }
-    }
-}
-
 header{
-    display: flex;
+    @include d-flex(center,center);
     background-color:$mainColor;
     flex-direction:column;
-    align-items: center;
     text-align: center;
-    justify-content: center;
+    
 
     div{
         h1{
@@ -107,9 +83,7 @@ main{
             padding: 3%; 
 
             figure{
-                display: flex;
-                align-items: center;
-                flex-direction: column;
+                @include d-flex-col(center,center);
                 
                 img{
                     border-top-left-radius: 25%;
@@ -133,12 +107,13 @@ main{
                     cursor: pointer;
                     border-radius: 8px;
                     font-size: $textLg;
+                    &:hover{
+                        background-color: $keyColor;
+                        color: $blanco;
+                        transition-duration: 0.6s;
+                    }
                 }
-                button:hover{
-                    background-color: $keyColor;
-                    color: $blanco;
-                    transition-duration: 0.6s;
-                }
+                
             }
         }
     }

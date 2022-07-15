@@ -1,0 +1,23 @@
+
+.navbar{
+    background-color: $mainColor;
+    div{
+        button{
+            background-color: $blanco;
+            color: $keyColor;
+        }
+    }
+    img{
+        width: 85px;
+        box-sizing: border-box;
+    }
+    li{
+        a{
+            color:$blanco;
+            font-size:$textLg;
+        }
+        a:hover{
+            color:$keyColor;
+        }
+    }
+}

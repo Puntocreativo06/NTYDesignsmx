@@ -1,0 +1,31 @@
+.encabezado{
+    @include encabezado();
+}
+
+#catalogo{
+    section{
+        table{
+        margin: 5% auto;
+        border-style:dotted;
+        width: 50%; 
+        border: 15px;
+        border-color: $keyColor;
+        box-sizing: content-box;
+         
+            tr {
+                text-align: center;
+                color: $secondColor;
+
+                td{
+                   img{
+                        width: 200px;
+                    } 
+                }
+                
+            } 
+    
+        }
+    }
+}
+
+

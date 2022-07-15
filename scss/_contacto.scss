@@ -1,0 +1,18 @@
+.encabezado{
+    @include encabezado();
+}
+
+.infoPers {
+    display: inline;
+    margin: 3% 10%;
+    width: 80%;
+    text-align: center;
+    border: none;
+}
+
+fieldset{
+    h2{
+        font-family: $secondaryFont;
+        color: $keyColor;
+    }
+}

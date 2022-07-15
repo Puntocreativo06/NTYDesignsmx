@@ -4,4 +4,36 @@ $mainColor: #00334E;
 $secondColor: #145374;
 $keyColor: #ee6f57;
 $blanco:#F6f5f5;
+$facebook:#1877f2;
+$whatsapp:#25d366;
+$instagram:#e1306c;
 
+$paleta:(
+    'azul fuerte':#00334E,
+    'azul claro' :#145374,
+    'melon':#ee6f57,
+    'blanco':#F6f5f5,
+);
+
+
+@mixin d-flex($justificar,$align) {
+    display: flex;
+    justify-content: $justificar;
+    align-items: $align;
+}
+
+@mixin d-flex-col($justificar,$align) {
+    display: flex;
+    flex-direction: column;
+    justify-content: $justificar;
+    align-items: $align;
+}
+
+@mixin encabezado {
+    font-size: $textXl;
+    background-color: map-get($map: $paleta, $key: 'azul claro');
+    padding: 3%;
+    text-align: center;
+    color: $keyColor;
+    font-family: $secondaryFont;
+}

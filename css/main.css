@@ -1,8 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Pacifico&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
-body {
-  font-family: "Montserrat", sans-serif; }
-
 .navbar {
   background-color: #00334E; }
   .navbar div button {
@@ -17,13 +14,32 @@ body {
   .navbar li a:hover {
     color: #ee6f57; }
 
+#footer {
+  background-color: #00334E;
+  color: #F6f5f5; }
+
+.fa-brands {
+  font-size: 1.4rem; }
+
+.fa-facebook {
+  color: #1877f2; }
+
+.fa-whatsapp {
+  color: #25d366; }
+
+.fa-instagram {
+  color: #e1306c; }
+
+body {
+  font-family: "Montserrat", sans-serif; }
+
 header {
   display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #00334E;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
-  justify-content: center; }
+  text-align: center; }
   header div h1 {
     font-family: "Pacifico", sans-serif;
     font-size: 2.5rem;
@@ -74,8 +90,9 @@ main .sec1 section {
   padding: 3%; }
   main .sec1 section figure {
     display: flex;
-    align-items: center;
-    flex-direction: column; }
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
     main .sec1 section figure img {
       border-top-left-radius: 25%;
       border-bottom-right-radius: 25%;
@@ -96,10 +113,10 @@ main .sec1 section {
       cursor: pointer;
       border-radius: 8px;
       font-size: 1.2rem; }
-    main .sec1 section figure button:hover {
-      background-color: #ee6f57;
-      color: #F6f5f5;
-      transition-duration: 0.6s; }
+      main .sec1 section figure button:hover {
+        background-color: #ee6f57;
+        color: #F6f5f5;
+        transition-duration: 0.6s; }
 
 main .sec2 h2 {
   background-color: #F6f5f5;
@@ -129,3 +146,67 @@ main .sec2 section {
       color: #145374;
       text-align: center;
       font-size: 1.4rem; }
+
+.encabezado {
+  font-size: 1.4rem;
+  background-color: #145374;
+  padding: 3%;
+  text-align: center;
+  color: #ee6f57;
+  font-family: "Pacifico", sans-serif; }
+
+#servicios div div div h1 {
+  font-family: "Pacifico", sans-serif;
+  color: #ee6f57; }
+
+.encabezado {
+  font-size: 1.4rem;
+  background-color: #145374;
+  padding: 3%;
+  text-align: center;
+  color: #ee6f57;
+  font-family: "Pacifico", sans-serif; }
+
+#catalogo section table {
+  margin: 5% auto;
+  border-style: dotted;
+  width: 50%;
+  border: 15px;
+  border-color: #ee6f57;
+  box-sizing: content-box; }
+  #catalogo section table tr {
+    text-align: center;
+    color: #145374; }
+    #catalogo section table tr td img {
+      width: 200px; }
+
+.encabezado {
+  font-size: 1.4rem;
+  background-color: #145374;
+  padding: 3%;
+  text-align: center;
+  color: #ee6f57;
+  font-family: "Pacifico", sans-serif; }
+
+.infoPers {
+  display: inline;
+  margin: 3% 10%;
+  width: 80%;
+  text-align: center;
+  border: none; }
+
+fieldset h2 {
+  font-family: "Pacifico", sans-serif;
+  color: #ee6f57; }
+
+.encabezado {
+  font-size: 1.4rem;
+  background-color: #145374;
+  padding: 3%;
+  text-align: center;
+  color: #ee6f57;
+  font-family: "Pacifico", sans-serif; }
+
+#faq section div h6, #faq section div strong {
+  color: #ee6f57;
+  font-size: 1.2rem; }

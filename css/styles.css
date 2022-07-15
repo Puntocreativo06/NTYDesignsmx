@@ -33,7 +33,6 @@ nav a img {
 /* Encabezado Index*/
 
 header{
-    display: flex;
     background-color: #00334e;
     display: flex;
     flex-direction:column;

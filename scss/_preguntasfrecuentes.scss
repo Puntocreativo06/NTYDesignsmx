@@ -1,0 +1,18 @@
+.encabezado{
+    @include encabezado();
+}
+
+#faq {
+    section{
+        div{
+            h6{
+                color: $keyColor;
+                font-size: $textLg;
+            }
+
+            strong{
+                @extend h6
+            }
+        }
+    }
+}

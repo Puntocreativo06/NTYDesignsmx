@@ -1,0 +1,16 @@
+.encabezado{
+    @include encabezado();
+}
+
+#servicios{
+    div{
+        div{
+            div{
+                h1{
+                    font-family: $secondaryFont;
+                    color: $keyColor;
+                }
+            }
+        }
+    }
+}

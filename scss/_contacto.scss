@@ -16,3 +16,67 @@ fieldset{
         color: $keyColor;
     }
 }
+
+
+
+#contactForm{
+    @include d-flex-col(center,center);
+    
+    div{
+        @include d-flex-col(center,center);
+    }
+
+    .btn{
+    width: 30%;
+    border: 1px;
+    background-color: $mainColor;
+    color:$blanco;
+    padding: 2%;
+    text-align: center;
+    text-decoration: none;
+    align-items: center;
+    margin: 3%;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: $textLg;
+        &:hover{
+        background-color: $keyColor;
+        transition-duration: 0.2s;
+        }
+    }
+}
+
+.location{
+
+    @include d-flex-col(center,center);
+
+    h2{
+        font-family: $secondaryFont;
+        color: $keyColor;
+    }
+
+    iframe{
+        width: 600px;
+        height: 450px;;
+    }
+
+    
+}
+
+@media only screen and (max-width: 770px){
+    .location{    
+        iframe{
+            width: 400px;
+            height: 250px;;
+        }
+    }
+}
+
+@media only screen and (max-width: 370px){
+    .location{    
+        iframe{
+            width: 300px;
+            height: 150px;;
+        }
+    }
+}

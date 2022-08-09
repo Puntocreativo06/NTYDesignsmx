@@ -32,8 +32,12 @@ $paleta:(
 @mixin encabezado {
     font-size: $textXl;
     background-color: map-get($map: $paleta, $key: 'azul claro');
-    padding: 3%;
+    padding: 1%;
     text-align: center;
     color: $keyColor;
     font-family: $secondaryFont;
+}
+
+@mixin boton {
+    
 }

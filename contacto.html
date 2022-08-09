@@ -53,6 +53,9 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item">
+                  <a class="nav-link" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="../servicios.html">Servicios</a>
                 </li>
                 <li class="nav-item">
@@ -74,46 +77,32 @@
     <!-- Formulario de contacto -->
   
     <div class="encabezado">
-        <h1 class="subtitle animate__animated animate__slideInLeft"">Contacto</h1> 
+        <h1 class="subtitle animate__animated animate__slideInLeft">Contacto</h1> 
     </div>
-    <div class="container py-4">
-        <form id="contactForm" action="mailto:ntydesingsmx@gmail.com" >
+    <div class="container-fluid py-4">
+        <form id="contactForm" action="" >
       
           <!-- Name input -->
           <div class="mb-3">
             <label class="form-label" for="name">Nombre</label>
             <input class="form-control" id="name" type="text" placeholder="Nombre" data-sb-validations="required" />
-            <div class="invalid-feedback" data-sb-feedback="name:required">Nombre es necesario</div>
           </div>
       
           <!-- Email address input -->
           <div class="mb-3">
             <label class="form-label" for="emailAddress">Correo electrónico</label>
-            <input class="form-control" id="emailAddress" type="email" placeholder="Email" data-sb-validations="required, email" />
-            <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Email es requerido.</div>
-            <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Email no es válido.</div>
+            <input class="form-control" id="emailAddress" type="email" placeholder="Email" data-sb-validations="required,email" />
           </div>
       
           <!-- Message input -->
           <div class="mb-3">
             <label class="form-label" for="message">Mensaje</label>
             <textarea class="form-control" id="message" type="text" placeholder="Mensaje" style="height: 10rem;" data-sb-validations="required"></textarea>
-            <div class="invalid-feedback" data-sb-feedback="message:required">Mensaje es requerido.</div>
-          </div>
-      
-          <!-- Form submissions success message -->
-          <div class="d-none" id="submitSuccessMessage">
-            <div class="text-center mb-3">Envio de informacion correcto! Pronto nos pondremos en contacto contigo.</div>
-          </div>
-      
-          <!-- Form submissions error message -->
-          <div class="d-none" id="submitErrorMessage">
-            <div class="text-center text-danger mb-3">Error enviando mensaje.</div>
           </div>
       
           <!-- Form submit button -->
-          <div class="d-grid">
-            <button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button>
+          <div class="container">
+            <button class="btn" id="submitButton" type="submit">Enviar</button>
           </div>
       
         </form>
@@ -126,9 +115,13 @@
             Lunes a viernes: 9:30 am a 6:30 pm <br> 
             Sábado 10:00 AM a 2:00 PM
         </p>
-        <h2 class="mb-3" >Ubicacion</h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.338791784462!2d-99.09531290000002!3d19.397762499999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fc2f31d59a15%3A0x5615f613f2bbb733!2sCanela%20484%2C%20Granjas%20M%C3%A9xico%2C%20Iztacalco%2C%2008400%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses-419!2smx!4v1653979105416!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </fieldset>
+    </fieldset>
+
+    <div class="container-fluid location m-3" >
+      <h2 class="mb-3" >Ubicacion</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.338791784462!2d-99.09531290000002!3d19.397762499999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fc2f31d59a15%3A0x5615f613f2bbb733!2sCanela%20484%2C%20Granjas%20M%C3%A9xico%2C%20Iztacalco%2C%2008400%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses-419!2smx!4v1653979105416!5m2!1ses-419!2smx" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+        
     <!-- Footer -->
     <div id="footer" class="container-fluid">
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-4">

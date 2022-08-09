@@ -2,28 +2,27 @@
     @include encabezado();
 }
 
-#catalogo{
-    section{
-        table{
-        margin: 5% auto;
-        border-style:dotted;
-        width: 50%; 
-        border: 15px;
-        border-color: $keyColor;
-        box-sizing: content-box;
-         
-            tr {
-                text-align: center;
-                color: $secondColor;
+main{
+    div{
+        
+        .muestrario{
+            display: grid; 
+            gap: 1rem;
+            grid-template-columns: repeat(auto-fit, minmax(16rem,1fr));  /* Linea para responsive */
+            grid-auto-rows: max-content;
+            background-color: $blanco;
+            padding: 1%;
+            align-self: center;
 
-                td{
-                   img{
-                        width: 200px;
-                    } 
-                }
-                
-            } 
-    
+            .card{
+                width:15rem;
+            }
+
+            .card-img-top{
+                height: 50px;
+                align-items: center;
+                justify-content: center;
+            }
         }
     }
 }

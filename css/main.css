@@ -62,7 +62,7 @@ header {
     font-size: 1.4rem;
     color: #F6f5f5; }
 
-@media only screen and (min-width: 780px) {
+@media only screen and (min-width: 770px) {
   header {
     flex-direction: row; }
     header div p {
@@ -150,7 +150,7 @@ main .sec2 section {
 .encabezado {
   font-size: 1.4rem;
   background-color: #145374;
-  padding: 3%;
+  padding: 1%;
   text-align: center;
   color: #ee6f57;
   font-family: "Pacifico", sans-serif; }
@@ -162,28 +162,31 @@ main .sec2 section {
 .encabezado {
   font-size: 1.4rem;
   background-color: #145374;
-  padding: 3%;
+  padding: 1%;
   text-align: center;
   color: #ee6f57;
   font-family: "Pacifico", sans-serif; }
 
-#catalogo section table {
-  margin: 5% auto;
-  border-style: dotted;
-  width: 50%;
-  border: 15px;
-  border-color: #ee6f57;
-  box-sizing: content-box; }
-  #catalogo section table tr {
-    text-align: center;
-    color: #145374; }
-    #catalogo section table tr td img {
-      width: 200px; }
+main div .muestrario {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  /* Linea para responsive */
+  grid-auto-rows: max-content;
+  background-color: #F6f5f5;
+  padding: 1%;
+  align-self: center; }
+  main div .muestrario .card {
+    width: 15rem; }
+  main div .muestrario .card-img-top {
+    height: 50px;
+    align-items: center;
+    justify-content: center; }
 
 .encabezado {
   font-size: 1.4rem;
   background-color: #145374;
-  padding: 3%;
+  padding: 1%;
   text-align: center;
   color: #ee6f57;
   font-family: "Pacifico", sans-serif; }
@@ -199,10 +202,59 @@ fieldset h2 {
   font-family: "Pacifico", sans-serif;
   color: #ee6f57; }
 
+#contactForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  #contactForm div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  #contactForm .btn {
+    width: 30%;
+    border: 1px;
+    background-color: #00334E;
+    color: #F6f5f5;
+    padding: 2%;
+    text-align: center;
+    text-decoration: none;
+    align-items: center;
+    margin: 3%;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 1.2rem; }
+    #contactForm .btn:hover {
+      background-color: #ee6f57;
+      transition-duration: 0.2s; }
+
+.location {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .location h2 {
+    font-family: "Pacifico", sans-serif;
+    color: #ee6f57; }
+  .location iframe {
+    width: 600px;
+    height: 450px; }
+
+@media only screen and (max-width: 770px) {
+  .location iframe {
+    width: 400px;
+    height: 250px; } }
+
+@media only screen and (max-width: 370px) {
+  .location iframe {
+    width: 300px;
+    height: 150px; } }
+
 .encabezado {
   font-size: 1.4rem;
   background-color: #145374;
-  padding: 3%;
+  padding: 1%;
   text-align: center;
   color: #ee6f57;
   font-family: "Pacifico", sans-serif; }
